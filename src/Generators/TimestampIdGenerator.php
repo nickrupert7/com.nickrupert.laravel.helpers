@@ -4,7 +4,6 @@ namespace Helium\LaravelHelpers\Generators;
 
 use Carbon\Carbon;
 use Helium\LaravelHelpers\Contracts\IdGenerator;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
 class TimestampIdGenerator extends IdGenerator
