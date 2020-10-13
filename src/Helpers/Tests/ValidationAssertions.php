@@ -126,7 +126,9 @@ trait ValidationAssertions
         $otherInstance = factory($otherClass)->create();
         $key = $otherInstance->getKey();
 
-        $otherInstance->forceDelete();
+        $otherInstance->newModelQuery()
+            ->where($otherInstance->getKeyName(), '=', $otherInstance->getKey())
+            ->delete();
 
         $attributes = factory($class)->raw([
             $attribute => $key
