@@ -10,11 +10,15 @@ trait HandlesMedia
 {
     public function setMediaUrlAttribute($value)
     {
-        $path = method_exists($this, 'getMediaStoragePath')
-            ? $this->getMediaStoragePath()
-            : "{$this->getTable()}/{$this->getKey()}/media";
+        if (!is_null($value)) {
+            $path = method_exists($this, 'getMediaStoragePath')
+                ? $this->getMediaStoragePath()
+                : "{$this->getTable()}/{$this->getKey()}/media";
 
-        $url = Storage::putFile($path, $value);
+            $url = Storage::putFile($path, $value);
+        } else {
+            $url = null;
+        }
 
         $this->attributes['media_url'] = $url;
     }
@@ -22,7 +26,11 @@ trait HandlesMedia
     public function getMediaUrlAttribute($value)
     {
         if ($savedUrl = $this->attributes['media_url']) {
-            return Storage::temporaryUrl($savedUrl, Carbon::now()->addMinute());
+            try {
+                return Storage::temporaryUrl($savedUrl, Carbon::now()->addMinute());
+            } catch (\RuntimeException $e) {
+                return Storage::url($savedUrl);
+            }
         }
 
         return null;

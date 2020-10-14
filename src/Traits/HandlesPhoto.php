@@ -10,11 +10,15 @@ trait HandlesPhoto
 {
     public function setPhotoUrlAttribute($value)
     {
-        $path = method_exists($this, 'getPhotoStoragePath')
-            ? $this->getPhotoStoragePath()
-            : "{$this->getTable()}/{$this->getKey()}/photos";
+        if (!is_null($value)) {
+            $path = method_exists($this, 'getPhotoStoragePath')
+                ? $this->getPhotoStoragePath()
+                : "{$this->getTable()}/{$this->getKey()}/photos";
 
-        $url = Storage::putFile($path, $value);
+            $url = Storage::putFile($path, $value);
+        } else {
+            $url = null;
+        }
 
         $this->attributes['photo_url'] = $url;
     }
@@ -22,7 +26,11 @@ trait HandlesPhoto
     public function getPhotoUrlAttribute($value)
     {
         if ($savedUrl = $this->attributes['photo_url']) {
-            return Storage::temporaryUrl($savedUrl, Carbon::now()->addMinute());
+            try {
+                return Storage::temporaryUrl($savedUrl, Carbon::now()->addMinute());
+            } catch (\RuntimeException $e) {
+                return Storage::url($savedUrl);
+            }
         } elseif (method_exists(get_parent_class($this), 'getPhotoUrlAttribute')) {
             return parent::getPhotoUrlAttribute($value);
         } else {
