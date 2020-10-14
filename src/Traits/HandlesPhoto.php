@@ -10,8 +10,13 @@ trait HandlesPhoto
 {
     public function setPhotoUrlAttribute($value)
     {
-        $path = Storage::putFile("users/{$this->getKey()}/profile", $value);
-        $this->attributes['photo_url'] = $path;
+        $path = method_exists($this, 'getPhotoStoragePath')
+            ? $this->getPhotoStoragePath()
+            : "{$this->getTable()}/{$this->getKey()}/photos";
+
+        $url = Storage::putFile($path, $value);
+
+        $this->attributes['photo_url'] = $url;
     }
 
     public function getPhotoUrlAttribute($value)
