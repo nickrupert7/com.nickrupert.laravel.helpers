@@ -37,4 +37,9 @@ trait HandlesPhoto
             return empty($value) ? 'https://www.gravatar.com/avatar/'.md5(Str::lower($this->email)).'.jpg?s=200&d=mm' : url($value);
         }
     }
+
+    public function getPhotoStoragePathAttribute()
+    {
+        return $this->attributes['photo_url'];
+    }
 }

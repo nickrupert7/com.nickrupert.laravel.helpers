@@ -35,4 +35,9 @@ trait HandlesMedia
 
         return null;
     }
+
+    public function getMediaStoragePathAttribute()
+    {
+        return $this->attributes['media_url'];
+    }
 }
