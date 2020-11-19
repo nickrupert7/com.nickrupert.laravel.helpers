@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class OneTimeSeeder extends Seeder
 {
-    public function __invoke()
+    public function __invoke(array $parameters = [])
     {
         $class = static::class;
 
@@ -16,7 +16,7 @@ class OneTimeSeeder extends Seeder
             return;
         }
 
-        $returnValue = parent::__invoke();
+        $returnValue = parent::__invoke($parameters);
 
         DB::table('one_time_seeds')->insert(['seeder' => $class]);
 

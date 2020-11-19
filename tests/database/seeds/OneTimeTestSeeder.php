@@ -2,7 +2,7 @@
 
 namespace Tests\database\seeds;
 
-use Helium\LaravelHelpers\Database\Seeds\OneTimeSeeder;
+use Helium\LaravelHelpers\Database\Seeds\Base\OneTimeSeeder;
 use Illuminate\Support\Facades\DB;
 
 class OneTimeTestSeeder extends OneTimeSeeder
