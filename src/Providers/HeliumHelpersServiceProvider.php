@@ -4,9 +4,7 @@ namespace Helium\LaravelHelpers\Providers;
 
 use Helium\LaravelHelpers\Controllers\StatesController;
 use Helium\LaravelHelpers\Middleware\CastCamelToSnake;
-use Helium\LaravelHelpers\Models\State;
-use Illuminate\Http\Request;
-use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class HeliumHelpersServiceProvider extends ServiceProvider
