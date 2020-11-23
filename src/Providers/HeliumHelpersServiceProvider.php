@@ -2,7 +2,11 @@
 
 namespace Helium\LaravelHelpers\Providers;
 
+use Helium\LaravelHelpers\Controllers\StatesController;
 use Helium\LaravelHelpers\Middleware\CastCamelToSnake;
+use Helium\LaravelHelpers\Models\State;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 use Illuminate\Support\ServiceProvider;
 
 class HeliumHelpersServiceProvider extends ServiceProvider
@@ -17,6 +21,10 @@ class HeliumHelpersServiceProvider extends ServiceProvider
 			__DIR__ . '/../config/batch.php' => config_path('batch.php'),
             __DIR__ . '/../Database/migrations/Common' => database_path('migrations')
 		]);
+
+        if (!$this->app->routesAreCached()) {
+            Route::get('api/states', [StatesController::class, 'index'])->middleware(['api']);
+        }
 
 		if ($this->app->runningInConsole())
 		{
