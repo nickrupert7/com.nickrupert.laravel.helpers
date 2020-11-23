@@ -12,7 +12,7 @@ class StatesController extends Controller
         $states = State::all();
 
         if ($request->has('country_code')) {
-            $states->where('country_code', $request->get('country_code'));
+            $states = $states->where('country_code', $request->get('country_code'));
         }
 
         return $states;
