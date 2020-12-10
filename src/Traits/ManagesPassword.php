@@ -179,5 +179,6 @@ trait ManagesPassword
 		}
 
 		$this->setPasswordAttribute($password, $password_confirm);
+		$this->save();
 	}
 }
