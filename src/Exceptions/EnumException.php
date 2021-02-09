@@ -13,7 +13,7 @@ class EnumException extends ApiException
 	public function __construct(string $key, $value, array $enumValues)
 	{
 		$this->key = $key;
-		$this->value = $value;
+        $this->value = is_array($value) ? 'array' : $value;
 		$this->enumValues = $enumValues;
 
 		parent::__construct("'$value' is not in the specified enum values for '$key'",
