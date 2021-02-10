@@ -16,7 +16,7 @@ class EnumException extends ApiException
         $this->value = is_array($value) ? 'array' : $value;
 		$this->enumValues = $enumValues;
 
-		parent::__construct("'$value' is not in the specified enum values for '$key'",
+		parent::__construct("'$this->value' is not in the specified enum values for '$this->key'",
 			400);
 	}
 
