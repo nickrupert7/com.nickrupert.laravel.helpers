@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Middleware;
+namespace NickRupert\LaravelHelpers\Middleware;
 
 use Closure;
 use Illuminate\Support\Str;

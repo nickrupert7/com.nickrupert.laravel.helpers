@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Contracts;
+namespace NickRupert\LaravelHelpers\Contracts;
 
 use ReflectionClass;
 

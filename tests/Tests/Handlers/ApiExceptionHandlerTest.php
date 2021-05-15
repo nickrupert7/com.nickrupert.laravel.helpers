@@ -3,10 +3,10 @@
 namespace Tests\Tests\Handlers;
 
 use Exception;
-use Helium\LaravelHelpers\Exceptions\InternalServerException;
-use Helium\LaravelHelpers\Exceptions\ApiException;
-use Helium\LaravelHelpers\Exceptions\ValidationException as HeliumValidationException;
-use Helium\LaravelHelpers\Handlers\ApiExceptionHandler;
+use NickRupert\LaravelHelpers\Exceptions\InternalServerException;
+use NickRupert\LaravelHelpers\Exceptions\ApiException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException as NickRupertValidationException;
+use NickRupert\LaravelHelpers\Handlers\ApiExceptionHandler;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Container\Container;
@@ -64,7 +64,7 @@ class ApiExceptionHandlerTest extends TestCase
 			])->validate();
 
 			$this->assertTrue(false);
-		} catch (HeliumValidationException $e) {
+		} catch (NickRupertValidationException $e) {
 			$exceptions[] = $e;
 		}
 
@@ -76,7 +76,7 @@ class ApiExceptionHandlerTest extends TestCase
 
 			$array = $response->getData(true);
 
-			if ($e instanceof HeliumValidationException)
+			if ($e instanceof NickRupertValidationException)
 			{
 				$this->assertEquals(400, $response->getStatusCode());
 
@@ -139,7 +139,7 @@ class ApiExceptionHandlerTest extends TestCase
 
             $this->assertFalse(true);
         } catch (IlluminateValidationException $e) {
-            $expectedMessage = (new HeliumValidationException($e))->getMessage();
+            $expectedMessage = (new NickRupertValidationException($e))->getMessage();
 
             $response = $handler->render($request, $e);
 

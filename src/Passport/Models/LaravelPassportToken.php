@@ -1,12 +1,12 @@
 <?php
 
-namespace Helium\LaravelHelpers\Passport\Models;
+namespace NickRupert\LaravelHelpers\Passport\Models;
 
-use Helium\LaravelHelpers\Traits\GeneratesPrimaryKey;
+use NickRupert\LaravelHelpers\Traits\GeneratesPrimaryKey;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Passport\Token;
 
-class HeliumPassportToken extends Token
+class LaravelPassportToken extends Token
 {
     use GeneratesPrimaryKey;
     use SoftDeletes;

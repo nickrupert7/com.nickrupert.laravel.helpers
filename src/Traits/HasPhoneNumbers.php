@@ -1,13 +1,13 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Helpers\StringHelper;
+use NickRupert\LaravelHelpers\Helpers\StringHelper;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException as IlluminateValidationException;
-use Helium\LaravelHelpers\Exceptions\ValidationException as HeliumValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException as NickRupertValidationException;
 
 trait HasPhoneNumbers
 {

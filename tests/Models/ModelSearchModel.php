@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\ModelSearch;
+use NickRupert\LaravelHelpers\Traits\ModelSearch;
 use Tests\Models\Base\TestModel;
 
 class ModelSearchModel extends TestModel

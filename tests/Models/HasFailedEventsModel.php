@@ -2,10 +2,10 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\BulkActions;
-use Helium\LaravelHelpers\Traits\DefaultOrdering;
-use Helium\LaravelHelpers\Traits\GeneratesPrimaryKey;
-use Helium\LaravelHelpers\Traits\HasFailedEvents;
+use NickRupert\LaravelHelpers\Traits\BulkActions;
+use NickRupert\LaravelHelpers\Traits\DefaultOrdering;
+use NickRupert\LaravelHelpers\Traits\GeneratesPrimaryKey;
+use NickRupert\LaravelHelpers\Traits\HasFailedEvents;
 use Tests\Models\Base\TestModel;
 
 class HasFailedEventsModel extends TestModel

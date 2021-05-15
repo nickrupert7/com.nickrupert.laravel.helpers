@@ -4,16 +4,16 @@ namespace Tests\Tests\Traits;
 
 use Askedio\SoftCascade\Traits\SoftCascadeTrait;
 use Czim\NestedModelUpdater\Traits\NestedUpdatable;
-use Helium\LaravelHelpers\Exceptions\ValidationException;
-use Helium\LaravelHelpers\Traits\BulkActions;
-use Helium\LaravelHelpers\Traits\DefaultOrdering;
-use Helium\LaravelHelpers\Traits\FillableOnCreate;
-use Helium\LaravelHelpers\Traits\GeneratesPrimaryKey;
-use Helium\LaravelHelpers\Traits\HasAttributeEvents;
-use Helium\LaravelHelpers\Traits\HasEnums;
-use Helium\LaravelHelpers\Traits\HeliumBaseTraits;
-use Helium\LaravelHelpers\Traits\ModelSearch;
-use Helium\LaravelHelpers\Traits\SelfValidates;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Traits\BulkActions;
+use NickRupert\LaravelHelpers\Traits\DefaultOrdering;
+use NickRupert\LaravelHelpers\Traits\FillableOnCreate;
+use NickRupert\LaravelHelpers\Traits\GeneratesPrimaryKey;
+use NickRupert\LaravelHelpers\Traits\HasAttributeEvents;
+use NickRupert\LaravelHelpers\Traits\HasEnums;
+use NickRupert\LaravelHelpers\Traits\LaravelBaseTraits;
+use NickRupert\LaravelHelpers\Traits\ModelSearch;
+use NickRupert\LaravelHelpers\Traits\SelfValidates;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
 use Tests\Models\SelfValidatesModel;
@@ -27,11 +27,11 @@ use Tests\TestCase;
  * Rather, unit tests should cover the successful use of the suppliedconfiguration,
  * including validation rules, messages, and validatesOnSave.
  */
-class HeliumBaseTraitsTest extends TestCase
+class LaravelBaseTraitsTest extends TestCase
 {
 	public function testHasTraits()
 	{
-		$uses = class_uses(HeliumBaseTraits::class);
+		$uses = class_uses(LaravelBaseTraits::class);
 
 		$this->assertContains(GeneratesPrimaryKey::class, $uses);
 		$this->assertContains(HasAttributeEvents::class, $uses);

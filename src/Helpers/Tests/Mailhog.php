@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Helpers\Tests;
+namespace NickRupert\LaravelHelpers\Helpers\Tests;
 
 use Http\Client\Curl\Client;
 use Nyholm\Psr7\Factory\HttplugFactory;

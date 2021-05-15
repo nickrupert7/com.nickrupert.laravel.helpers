@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Exception;
-use Helium\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
 
 trait TestingHelpers
 {

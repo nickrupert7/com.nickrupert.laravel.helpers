@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Controllers;
+namespace NickRupert\LaravelHelpers\Controllers;
 
-use Helium\LaravelHelpers\Models\State;
+use NickRupert\LaravelHelpers\Models\State;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

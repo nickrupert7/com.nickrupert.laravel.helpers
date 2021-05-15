@@ -2,7 +2,7 @@
 
 namespace Tests\Tests\Helpers;
 
-use Helium\LaravelHelpers\Helpers\PolicyHelper;
+use NickRupert\LaravelHelpers\Helpers\PolicyHelper;
 use Illuminate\Support\Facades\Auth;
 use Tests\Models\HasAdminsModel;
 use Tests\TestCase;

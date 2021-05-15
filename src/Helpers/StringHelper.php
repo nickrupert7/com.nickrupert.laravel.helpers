@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Helpers;
+namespace NickRupert\LaravelHelpers\Helpers;
 
 use Ramsey\Uuid\Uuid;
 

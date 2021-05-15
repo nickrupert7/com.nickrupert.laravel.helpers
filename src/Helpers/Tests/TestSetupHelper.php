@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Helpers\Tests;
+namespace NickRupert\LaravelHelpers\Helpers\Tests;
 
 use Dotenv\Dotenv;
 use Illuminate\Support\Facades\Artisan;

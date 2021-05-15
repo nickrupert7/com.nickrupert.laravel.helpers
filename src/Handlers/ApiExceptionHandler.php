@@ -1,10 +1,10 @@
 <?php
 
-namespace Helium\LaravelHelpers\Handlers;
+namespace NickRupert\LaravelHelpers\Handlers;
 
-use Helium\LaravelHelpers\Exceptions\ApiException;
-use Helium\LaravelHelpers\Exceptions\InternalServerException;
-use Helium\LaravelHelpers\Resources\ApiErrorResource;
+use NickRupert\LaravelHelpers\Exceptions\ApiException;
+use NickRupert\LaravelHelpers\Exceptions\InternalServerException;
+use NickRupert\LaravelHelpers\Resources\ApiErrorResource;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -13,7 +13,7 @@ use Illuminate\Http\Response;
 use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use Helium\LaravelHelpers\Exceptions\ValidationException as HeliumValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException as NickRupertValidationException;
 use Throwable;
 
 class ApiExceptionHandler extends Handler
@@ -21,7 +21,7 @@ class ApiExceptionHandler extends Handler
 	public function render($request, Throwable $e)
 	{
 	    if ($e instanceof ValidationException) {
-	        $e = new HeliumValidationException($e);
+	        $e = new NickRupertValidationException($e);
         }
 
 	    if ($e instanceof HttpException) {

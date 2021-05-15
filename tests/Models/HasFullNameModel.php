@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\HasFullName;
+use NickRupert\LaravelHelpers\Traits\HasFullName;
 use Tests\Models\Base\TestModel;
 
 class HasFullNameModel extends TestModel

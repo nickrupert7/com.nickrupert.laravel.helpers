@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Exceptions;
+namespace NickRupert\LaravelHelpers\Exceptions;
 
 class BatchLimitException extends \RuntimeException
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Rules;
+namespace NickRupert\LaravelHelpers\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -13,7 +13,7 @@ class PasswordUppercaseCharacterRule extends PasswordMustContainRule
 
 	public function message()
 	{
-		return trans('heliumHelpers::error.password.uppercase', [
+		return trans('laravelHelpers::error.password.uppercase', [
 			'count' => $this->minOccurrences
 		]);
 	}

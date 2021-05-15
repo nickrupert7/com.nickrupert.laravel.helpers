@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 

@@ -2,7 +2,7 @@
 
 namespace Tests\Tests\Traits;
 
-use Helium\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
 use Illuminate\Support\Collection;
 use Tests\Models\SelfValidatesModel;
 use Tests\Models\SelfValidatesModel2;

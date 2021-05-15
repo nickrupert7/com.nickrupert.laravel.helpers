@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Exceptions;
+namespace NickRupert\LaravelHelpers\Exceptions;
 
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException as IlluminateValidationException;

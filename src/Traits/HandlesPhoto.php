@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;

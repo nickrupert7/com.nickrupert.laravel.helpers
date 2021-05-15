@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Exceptions\NoDeleteException;
+use NickRupert\LaravelHelpers\Exceptions\NoDeleteException;
 
 trait NoDelete
 {

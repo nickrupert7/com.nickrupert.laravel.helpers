@@ -1,13 +1,13 @@
 <?php
 
-namespace Helium\LaravelHelpers\Helpers\Tests;
+namespace NickRupert\LaravelHelpers\Helpers\Tests;
 
 use Carbon\Carbon;
 use Carbon\Exceptions\InvalidFormatException;
 use Exception;
-use Helium\LaravelHelpers\Exceptions\EnumException;
-use Helium\LaravelHelpers\Exceptions\ValidationException;
-use Helium\LaravelHelpers\Helpers\StringHelper;
+use NickRupert\LaravelHelpers\Exceptions\EnumException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Helpers\StringHelper;
 use Illuminate\Database\Eloquent\Builder;
 use Tests\TestCase;
 

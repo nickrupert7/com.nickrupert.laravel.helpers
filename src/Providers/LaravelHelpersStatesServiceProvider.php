@@ -1,11 +1,11 @@
 <?php
 
-namespace Helium\LaravelHelpers\Providers;
+namespace NickRupert\LaravelHelpers\Providers;
 
-use Helium\LaravelHelpers\Middleware\CastCamelToSnake;
+use NickRupert\LaravelHelpers\Middleware\CastCamelToSnake;
 use Illuminate\Support\ServiceProvider;
 
-class HeliumHelpersStatesServiceProvider extends ServiceProvider
+class LaravelHelpersStatesServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{

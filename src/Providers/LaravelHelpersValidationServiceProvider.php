@@ -1,11 +1,11 @@
 <?php
 
-namespace Helium\LaravelHelpers\Providers;
+namespace NickRupert\LaravelHelpers\Providers;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 
-class HeliumHelpersValidationServiceProvider extends ServiceProvider
+class LaravelHelpersValidationServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{

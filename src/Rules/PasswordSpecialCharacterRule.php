@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Rules;
+namespace NickRupert\LaravelHelpers\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -16,7 +16,7 @@ class PasswordSpecialCharacterRule extends PasswordMustContainRule
 
 	public function message()
 	{
-		return trans('heliumHelpers::error.password.special', [
+		return trans('laravelHelpers::error.password.special', [
 			'count' => $this->minOccurrences,
 			'characters' => $this->characters
 		]);

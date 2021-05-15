@@ -2,20 +2,20 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\HeliumBaseTraits;
+use NickRupert\LaravelHelpers\Traits\LaravelBaseTraits;
 use Tests\Models\Base\SetupGeneratesPrimaryKey;
 use Tests\Models\Base\SetupHasAttributeEvents;
 use Tests\Models\Base\SetupHasEnums;
 use Tests\Models\Base\SetupSelfValidates2;
 use Tests\Models\Base\TestModel;
 
-class HeliumBaseTraitsModel2 extends TestModel
+class LaravelBaseTraitsModel2 extends TestModel
 {
-	use HeliumBaseTraits;
+	use LaravelBaseTraits;
 	use SetupGeneratesPrimaryKey;
 	use SetupHasAttributeEvents;
 	use SetupHasEnums;
 	use SetupSelfValidates2;
 
-	protected $table = 'helium_base_traits_models';
+	protected $table = 'nickrupert_base_traits_models';
 }

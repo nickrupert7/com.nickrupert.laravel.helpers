@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Helium\LaravelHelpers\Providers\HeliumHelpersServiceProvider;
+use NickRupert\LaravelHelpers\Providers\LaravelHelpersServiceProvider;
 
 trait SetsUpTests
 {
@@ -18,7 +18,7 @@ trait SetsUpTests
 	protected function getPackageProviders($app)
 	{
 		return [
-			HeliumHelpersServiceProvider::class
+			LaravelHelpersServiceProvider::class
 		];
 	}
 

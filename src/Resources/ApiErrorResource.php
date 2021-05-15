@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Resources;
+namespace NickRupert\LaravelHelpers\Resources;
 
-use Helium\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

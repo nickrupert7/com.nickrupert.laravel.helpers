@@ -2,7 +2,7 @@
 
 namespace Tests\Enums;
 
-use Helium\LaravelHelpers\Contracts\Enum;
+use NickRupert\LaravelHelpers\Contracts\Enum;
 
 class Color extends Enum
 {

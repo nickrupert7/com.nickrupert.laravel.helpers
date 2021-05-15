@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\SelfValidates;
+use NickRupert\LaravelHelpers\Traits\SelfValidates;
 use Tests\Models\Base\SetupSelfValidates;
 use Tests\Models\Base\TestModel;
 

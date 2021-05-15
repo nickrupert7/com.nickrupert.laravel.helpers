@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Exceptions\NoEditException;
+use NickRupert\LaravelHelpers\Exceptions\NoEditException;
 
 trait NoEdit
 {

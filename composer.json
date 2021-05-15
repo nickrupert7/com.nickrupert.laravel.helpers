@@ -1,12 +1,12 @@
 {
-    "name": "helium/laravel-helpers",
+    "name": "nickrupert/laravel-helpers",
     "description": "A collection of common use traits and functions for Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Nick Rupert",
-            "email": "nick@heliumservices.com"
+            "email": "nickrupert7@gmail.com"
         }
     ],
     "require": {
@@ -31,7 +31,7 @@
     },
 	"autoload": {
 		"psr-4": {
-			"Helium\\LaravelHelpers\\" : "src",
+			"NickRupert\\LaravelHelpers\\" : "src",
 			"Tests\\": "tests"
 		},
 		"files": [
@@ -41,8 +41,8 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Helium\\LaravelHelpers\\Providers\\HeliumHelpersServiceProvider",
-				"Helium\\LaravelHelpers\\Providers\\HeliumHelpersValidationServiceProvider"
+				"NickRupert\\LaravelHelpers\\Providers\\LaravelHelpersServiceProvider",
+				"NickRupert\\LaravelHelpers\\Providers\\LaravelHelpersValidationServiceProvider"
 			]
 		}
 	}

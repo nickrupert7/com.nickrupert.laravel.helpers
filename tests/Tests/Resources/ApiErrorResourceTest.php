@@ -3,8 +3,8 @@
 namespace Tests\Tests\Resources;
 
 use Exception;
-use Helium\LaravelHelpers\Exceptions\ValidationException;
-use Helium\LaravelHelpers\Resources\ApiErrorResource;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException;
+use NickRupert\LaravelHelpers\Resources\ApiErrorResource;
 use Illuminate\Http\Request;
 use Tests\TestCase;
 use Tests\Models\SelfValidatesModel;

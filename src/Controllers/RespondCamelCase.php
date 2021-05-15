@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Controllers;
+namespace NickRupert\LaravelHelpers\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Router;

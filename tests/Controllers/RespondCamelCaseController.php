@@ -2,7 +2,7 @@
 
 namespace Tests\Controllers;
 
-use Helium\LaravelHelpers\Controllers\RespondCamelCase;
+use NickRupert\LaravelHelpers\Controllers\RespondCamelCase;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Helium\LaravelHelpers\Generators;
+namespace NickRupert\LaravelHelpers\Generators;
 
 use Carbon\Carbon;
-use Helium\LaravelHelpers\Contracts\IdGenerator;
+use NickRupert\LaravelHelpers\Contracts\IdGenerator;
 use Illuminate\Support\Str;
 
 class TimestampIdGenerator extends IdGenerator

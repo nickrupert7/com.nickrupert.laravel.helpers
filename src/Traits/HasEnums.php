@@ -1,9 +1,9 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Contracts\Enum;
-use Helium\LaravelHelpers\Exceptions\EnumException;
+use NickRupert\LaravelHelpers\Contracts\Enum;
+use NickRupert\LaravelHelpers\Exceptions\EnumException;
 use Illuminate\Database\Eloquent\Model;
 
 trait HasEnums
