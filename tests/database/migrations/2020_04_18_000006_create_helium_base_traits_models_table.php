@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHeliumBaseTraitsModelsTable extends Migration
+class CreateNickRupertBaseTraitsModelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateHeliumBaseTraitsModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('helium_base_traits_models', function (Blueprint $table) {
+        Schema::create('nickrupert_base_traits_models', function (Blueprint $table) {
 	        $table->string('id')->primary();
 	        $table->timestamps();
 	        $table->string('favorite_color');
@@ -38,6 +38,6 @@ class CreateHeliumBaseTraitsModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('helium_base_traits_models');
+        Schema::dropIfExists('nickrupert_base_traits_models');
     }
 }

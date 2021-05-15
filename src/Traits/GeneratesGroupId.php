@@ -1,9 +1,9 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Generators\UuidIdGenerator;
-use Helium\LaravelHelpers\Contracts\IdGenerator;
+use NickRupert\LaravelHelpers\Generators\UuidIdGenerator;
+use NickRupert\LaravelHelpers\Contracts\IdGenerator;
 use Illuminate\Database\Eloquent\Model;
 
 trait GeneratesGroupId

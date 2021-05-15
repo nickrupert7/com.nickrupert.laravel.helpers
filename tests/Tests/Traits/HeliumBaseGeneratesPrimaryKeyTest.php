@@ -2,12 +2,12 @@
 
 namespace Tests\Tests\Traits;
 
-use Tests\Models\HeliumBaseTraitsModel;
+use Tests\Models\NickRupertBaseTraitsModel;
 
 /**
  * Inherits all test cases from GeneratesPrimaryKeyTest
  */
-class HeliumBaseGeneratesPrimaryKeyTest extends GeneratesPrimaryKeyTest
+class NickRupertBaseGeneratesPrimaryKeyTest extends GeneratesPrimaryKeyTest
 {
-	protected const TEST_CLASS = HeliumBaseTraitsModel::class;
+	protected const TEST_CLASS = NickRupertBaseTraitsModel::class;
 }

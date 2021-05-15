@@ -1,11 +1,11 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException as IlluminateValidationException;
-use Helium\LaravelHelpers\Exceptions\ValidationException as HeliumValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException as NickRupertValidationException;
 
 trait SelfValidates
 {
@@ -95,7 +95,7 @@ trait SelfValidates
 	/**
 	 * @description Perform attribute and relationship validation on the model
 	 * @return array
-	 * @throws HeliumValidationException
+	 * @throws NickRupertValidationException
 	 */
 	public function validate(): array
 	{
@@ -110,10 +110,10 @@ trait SelfValidates
 			return $v->validate();
 		} catch (IlluminateValidationException $e) {
 			//If validation fails, re-wrap the exception as a custom
-			//Helium\LaravelHelpers\Exceptions\ValidationException,
+			//NickRupert\LaravelHelpers\Exceptions\ValidationException,
 			//which is more readable than the native
 			//Illuminate\Validation\ValidationException
-			throw new HeliumValidationException($e, $this->allAttributesToArray());
+			throw new NickRupertValidationException($e, $this->allAttributesToArray());
 		}
 	}
 
@@ -133,10 +133,10 @@ trait SelfValidates
             return $v->validate();
         } catch (IlluminateValidationException $e) {
             //If validation fails, re-wrap the exception as a custom
-            //Helium\LaravelHelpers\Exceptions\ValidationException,
+            //NickRupert\LaravelHelpers\Exceptions\ValidationException,
             //which is more readable than the native
             //Illuminate\Validation\ValidationException
-            throw new HeliumValidationException($e, $this->allAttributesToArray());
+            throw new NickRupertValidationException($e, $this->allAttributesToArray());
         }
     }
 	//endregion

@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Exceptions;
+namespace NickRupert\LaravelHelpers\Exceptions;
 
 use Exception;
 use Throwable;

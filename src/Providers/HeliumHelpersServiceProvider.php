@@ -1,21 +1,21 @@
 <?php
 
-namespace Helium\LaravelHelpers\Providers;
+namespace NickRupert\LaravelHelpers\Providers;
 
-use Helium\LaravelHelpers\Controllers\StatesController;
-use Helium\LaravelHelpers\Middleware\CastCamelToSnake;
+use NickRupert\LaravelHelpers\Controllers\StatesController;
+use NickRupert\LaravelHelpers\Middleware\CastCamelToSnake;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
-class HeliumHelpersServiceProvider extends ServiceProvider
+class LaravelHelpersServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{
-		$this->loadTranslationsFrom(__DIR__ . '/../lang/', 'heliumHelpers');
+		$this->loadTranslationsFrom(__DIR__ . '/../lang/', 'laravelHelpers');
 		$this->loadMigrationsFrom(__DIR__ . '/../Database/migrations/Common');
 
 		$this->publishes([
-			__DIR__ . '/../lang/' => resource_path('lang/vendor/heliumHelpers'),
+			__DIR__ . '/../lang/' => resource_path('lang/vendor/laravelHelpers'),
 			__DIR__ . '/../config/batch.php' => config_path('batch.php'),
             __DIR__ . '/../Database/migrations/Common' => database_path('migrations')
 		]);

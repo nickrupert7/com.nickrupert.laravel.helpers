@@ -1,21 +1,21 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
 use Carbon\Carbon;
-use Helium\LaravelHelpers\Contracts\PasswordNotifiable;
-use Helium\LaravelHelpers\Rules\PasswordDoesNotContainRule;
-use Helium\LaravelHelpers\Rules\PasswordLengthRule;
-use Helium\LaravelHelpers\Rules\PasswordLowercaseCharacterRule;
-use Helium\LaravelHelpers\Rules\PasswordSpecialCharacterRule;
-use Helium\LaravelHelpers\Rules\PasswordUppercaseCharacterRule;
+use NickRupert\LaravelHelpers\Contracts\PasswordNotifiable;
+use NickRupert\LaravelHelpers\Rules\PasswordDoesNotContainRule;
+use NickRupert\LaravelHelpers\Rules\PasswordLengthRule;
+use NickRupert\LaravelHelpers\Rules\PasswordLowercaseCharacterRule;
+use NickRupert\LaravelHelpers\Rules\PasswordSpecialCharacterRule;
+use NickRupert\LaravelHelpers\Rules\PasswordUppercaseCharacterRule;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\ValidationException as IlluminateValidationException;
-use Helium\LaravelHelpers\Exceptions\ValidationException as HeliumValidationException;
+use NickRupert\LaravelHelpers\Exceptions\ValidationException as NickRupertValidationException;
 use Ramsey\Uuid\Uuid;
 
 trait ManagesPassword
@@ -27,14 +27,14 @@ trait ManagesPassword
 		if (!is_subclass_of($model, Model::class))
 		{
 			throw new \InvalidArgumentException(
-				trans('heliumHelpers::error.password.model'),
+				trans('laravelHelpers::error.password.model'),
 				['class' => $model]
 			);
 		}
 		if (!is_subclass_of($model, PasswordNotifiable::class))
 		{
 			throw new \InvalidArgumentException(
-				trans('heliumHelpers::error.password.interface'),
+				trans('laravelHelpers::error.password.interface'),
 				['class' => $model]
 			);
 		}
@@ -107,7 +107,7 @@ trait ManagesPassword
 		try {
             Validator::make($attributes, $rules)->validate();
         } catch (IlluminateValidationException $e) {
-		    throw new HeliumValidationException($e);
+		    throw new NickRupertValidationException($e);
         }
 	}
 
@@ -175,7 +175,7 @@ trait ManagesPassword
 	{
 		if ($old_password && !$this->checkPassword($old_password))
 		{
-			throw new UnauthorizedException(trans('heliumHelpers::error.password.incorrect'));
+			throw new UnauthorizedException(trans('laravelHelpers::error.password.incorrect'));
 		}
 
 		$this->setPasswordAttribute($password, $password_confirm);

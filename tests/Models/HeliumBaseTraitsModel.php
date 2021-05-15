@@ -2,16 +2,16 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\HeliumBaseTraits;
+use NickRupert\LaravelHelpers\Traits\NickRupertBaseTraits;
 use Tests\Models\Base\SetupGeneratesPrimaryKey;
 use Tests\Models\Base\SetupHasAttributeEvents;
 use Tests\Models\Base\SetupHasEnums;
 use Tests\Models\Base\SetupSelfValidates;
 use Tests\Models\Base\TestModel;
 
-class HeliumBaseTraitsModel extends TestModel
+class NickRupertBaseTraitsModel extends TestModel
 {
-	use HeliumBaseTraits;
+	use NickRupertBaseTraits;
 	use SetupGeneratesPrimaryKey;
 	use SetupHasAttributeEvents;
 	use SetupHasEnums;

@@ -1,6 +1,6 @@
 <?php
 
-use Helium\LaravelHelpers\Database\Seeds\Base\OneTimeSeeder;
+use NickRupert\LaravelHelpers\Database\Seeds\Base\OneTimeSeeder;
 use Illuminate\Support\Facades\DB;
 
 class StatesSeeder extends OneTimeSeeder

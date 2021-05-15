@@ -4,10 +4,10 @@ use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 use Tests\Enums\Color;
 use Tests\Models\GeneratesPrimaryKeyModel;
-use Tests\Models\HeliumBaseTraitsModel2;
+use Tests\Models\NickRupertBaseTraitsModel2;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(HeliumBaseTraitsModel2::class, function (Faker $faker) {
+$factory->define(NickRupertBaseTraitsModel2::class, function (Faker $faker) {
     return [
 	    'favorite_color' => $faker->randomElement(Color::all()),
 	    'favorite_primary_color' => $faker->randomElement(Color::PRIMARY),

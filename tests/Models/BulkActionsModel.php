@@ -2,9 +2,9 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\BulkActions;
-use Helium\LaravelHelpers\Traits\DefaultOrdering;
-use Helium\LaravelHelpers\Traits\GeneratesPrimaryKey;
+use NickRupert\LaravelHelpers\Traits\BulkActions;
+use NickRupert\LaravelHelpers\Traits\DefaultOrdering;
+use NickRupert\LaravelHelpers\Traits\GeneratesPrimaryKey;
 use Tests\Models\Base\TestModel;
 
 class BulkActionsModel extends TestModel

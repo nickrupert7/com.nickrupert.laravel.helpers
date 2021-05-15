@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Exceptions\BatchLimitException;
+use NickRupert\LaravelHelpers\Exceptions\BatchLimitException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 

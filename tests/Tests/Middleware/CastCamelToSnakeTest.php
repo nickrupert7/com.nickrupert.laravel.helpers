@@ -2,7 +2,7 @@
 
 namespace Tests\Tests\Middleware;
 
-use Helium\LaravelHelpers\Middleware\CastCamelToSnake;
+use NickRupert\LaravelHelpers\Middleware\CastCamelToSnake;
 use Illuminate\Http\Request;
 use Tests\TestCase;
 

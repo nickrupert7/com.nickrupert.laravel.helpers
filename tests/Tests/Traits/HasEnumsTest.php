@@ -2,7 +2,7 @@
 
 namespace Tests\Tests\Traits;
 
-use Helium\LaravelHelpers\Exceptions\EnumException;
+use NickRupert\LaravelHelpers\Exceptions\EnumException;
 use Tests\Enums\Color;
 use Tests\Models\HasEnumsModel;
 use Tests\TestCase;

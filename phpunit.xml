@@ -18,7 +18,7 @@
 		</whitelist>
 	</filter>
 	<testsuites>
-		<testsuite name="Helium Helpers Test Suite">
+		<testsuite name="NickRupert Helpers Test Suite">
 			<directory suffix="Test.php">./tests/Tests</directory>
 		</testsuite>
 	</testsuites>

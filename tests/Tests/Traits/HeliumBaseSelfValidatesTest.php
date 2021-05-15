@@ -2,14 +2,14 @@
 
 namespace Tests\Tests\Traits;
 
-use Tests\Models\HeliumBaseTraitsModel;
-use Tests\Models\HeliumBaseTraitsModel2;
+use Tests\Models\NickRupertBaseTraitsModel;
+use Tests\Models\NickRupertBaseTraitsModel2;
 
 /**
  * Inherits all test cases from SelfValidatesTest
  */
-class HeliumBaseSelfValidatesTest extends SelfValidatesTest
+class NickRupertBaseSelfValidatesTest extends SelfValidatesTest
 {
-	protected const TEST_CLASS = HeliumBaseTraitsModel::class;
-	protected const TEST_CLASS_2 = HeliumBaseTraitsModel2::class;
+	protected const TEST_CLASS = NickRupertBaseTraitsModel::class;
+	protected const TEST_CLASS_2 = NickRupertBaseTraitsModel2::class;
 }

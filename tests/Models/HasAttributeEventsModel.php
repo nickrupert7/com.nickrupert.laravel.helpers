@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\HasAttributeEvents;
+use NickRupert\LaravelHelpers\Traits\HasAttributeEvents;
 use Tests\Models\Base\SetupHasAttributeEvents;
 use Tests\Models\Base\TestModel;
 

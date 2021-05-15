@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Search\SearchQuery;
+use NickRupert\LaravelHelpers\Search\SearchQuery;
 use Illuminate\Database\Eloquent\Builder;
 
 trait ModelSearch

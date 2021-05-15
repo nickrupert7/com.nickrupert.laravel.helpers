@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\FillableOnCreate;
+use NickRupert\LaravelHelpers\Traits\FillableOnCreate;
 use Tests\Models\Base\TestModel;
 
 class FillableOnCreateModel extends TestModel

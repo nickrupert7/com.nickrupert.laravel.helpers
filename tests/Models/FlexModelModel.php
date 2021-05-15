@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use Helium\LaravelHelpers\Traits\FlexModel;
+use NickRupert\LaravelHelpers\Traits\FlexModel;
 use Tests\Models\Base\TestModel;
 
 class FlexModelModel extends TestModel

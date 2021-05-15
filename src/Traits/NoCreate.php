@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Traits;
+namespace NickRupert\LaravelHelpers\Traits;
 
-use Helium\LaravelHelpers\Exceptions\NoCreateException;
+use NickRupert\LaravelHelpers\Exceptions\NoCreateException;
 
 trait NoCreate
 {

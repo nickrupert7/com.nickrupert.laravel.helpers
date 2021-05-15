@@ -2,8 +2,8 @@
 
 namespace Tests\Tests\Traits;
 
-use Helium\LaravelHelpers\Generators\UuidPrimaryKeyGenerator;
-use Helium\LaravelHelpers\Contracts\IdGenerator;
+use NickRupert\LaravelHelpers\Generators\UuidPrimaryKeyGenerator;
+use NickRupert\LaravelHelpers\Contracts\IdGenerator;
 use Tests\Models\GeneratesPrimaryKeyModel;
 use Tests\TestCase;
 

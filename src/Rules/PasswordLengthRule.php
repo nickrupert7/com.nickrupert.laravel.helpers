@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Rules;
+namespace NickRupert\LaravelHelpers\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -20,7 +20,7 @@ class PasswordLengthRule implements Rule
 
 	public function message()
 	{
-		return trans('heliumHelpers::error.password.length', [
+		return trans('laravelHelpers::error.password.length', [
 			'minLength' => $this->minLength
 		]);
 	}

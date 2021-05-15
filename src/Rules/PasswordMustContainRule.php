@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Rules;
+namespace NickRupert\LaravelHelpers\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -22,7 +22,7 @@ class PasswordMustContainRule implements Rule
 
 	public function message()
 	{
-		return trans('heliumHelpers::error.password.contains', [
+		return trans('laravelHelpers::error.password.contains', [
 			'pattern' => $this->pattern,
 			'count' => $this->minOccurrences
 		]);

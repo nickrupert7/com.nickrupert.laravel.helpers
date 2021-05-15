@@ -1,9 +1,9 @@
 <?php
 
-namespace Helium\LaravelHelpers\Generators;
+namespace NickRupert\LaravelHelpers\Generators;
 
-use Helium\LaravelHelpers\Contracts\IdGenerator;
-use Helium\LaravelHelpers\Helpers\StringHelper;
+use NickRupert\LaravelHelpers\Contracts\IdGenerator;
+use NickRupert\LaravelHelpers\Helpers\StringHelper;
 
 class UuidIdGenerator extends IdGenerator
 {

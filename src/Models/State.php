@@ -1,10 +1,10 @@
 <?php
 
-namespace Helium\LaravelHelpers\Models;
+namespace NickRupert\LaravelHelpers\Models;
 
-use Helium\LaravelHelpers\Traits\NoCreate;
-use Helium\LaravelHelpers\Traits\NoDelete;
-use Helium\LaravelHelpers\Traits\NoEdit;
+use NickRupert\LaravelHelpers\Traits\NoCreate;
+use NickRupert\LaravelHelpers\Traits\NoDelete;
+use NickRupert\LaravelHelpers\Traits\NoEdit;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 

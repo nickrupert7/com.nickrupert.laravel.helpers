@@ -1,8 +1,8 @@
 <?php
 
-namespace Helium\LaravelHelpers\Helpers;
+namespace NickRupert\LaravelHelpers\Helpers;
 
-use Helium\LaravelHelpers\Contracts\HasAdmins;
+use NickRupert\LaravelHelpers\Contracts\HasAdmins;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Helium\LaravelHelpers\Rules;
+namespace NickRupert\LaravelHelpers\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -13,7 +13,7 @@ class PasswordNumberCharacterRule extends PasswordMustContainRule
 
 	public function message()
 	{
-		return trans('heliumHelpers::error.password.number', [
+		return trans('laravelHelpers::error.password.number', [
 			'count' => $this->minOccurrences
 		]);
 	}
